@@ -1,0 +1,19 @@
+body {
+	background: url(../img/background2.png)
+}
+	.thankyou {
+	text-align: center;
+	margin-top: 20%;
+	color: #fff;
+	font-family: "Proxima Nova";
+	font-size: 60px;
+	}
+	a {
+		margin-left: 43%;
+		color: #fff; 
+		text-decoration: none;
+		font-family: "Proxima Nova";
+		font-size: 60px;
+	}
+
+
