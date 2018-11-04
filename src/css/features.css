@@ -1,0 +1,328 @@
+.features {
+  background-color: #464556;
+  padding-bottom: 67px; }
+
+.container.features {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto; }
+
+.features-line1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 121px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.block-sound {
+  max-width: 200px;
+  width: 100%;
+  color: #ffffff;
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "IBM Plex Serif Semi Bold";
+  font-weight: 600; }
+
+.block-programms {
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px solid #ffffff;
+  max-width: 440px;
+  width: 100%; }
+  .block-programms_title {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 10px;
+    margin-left: 17px; }
+  .block-programms_variants {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    margin-top: 34px; }
+
+.block-repertoire {
+  max-width: 239px;
+  width: 100%; }
+  .block-repertoire_title {
+    color: #ff6d73;
+    font-size: 40px;
+    line-height: 42px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+  .block-repertoire_descr {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 11px; }
+
+.block-repertoire2 {
+  display: none;
+  max-width: 239px;
+  width: 100%; }
+  .block-repertoire2_title {
+    color: #ff6d73;
+    font-size: 40px;
+    line-height: 42px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+  .block-repertoire2_descr {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 11px; }
+
+.variant1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .variant1 span {
+    font-family: "IBM Plex Serif Semi Bold";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #ffffff; }
+  .variant1-descr {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    vertical-align: right;
+    margin-left: 9px; }
+
+.variant2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .variant2 span {
+    font-family: "IBM Plex Serif Semi Bold";
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #ffffff; }
+  .variant2-descr {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    vertical-align: right;
+    width: 144px;
+    margin-left: 9px; }
+
+.features-line2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 121px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.block-energy {
+  max-width: 200px;
+  width: 100%;
+  position: relative; }
+  .block-energy::before {
+    content: url(../img/features/lightning.png);
+    position: absolute;
+    left: -39px;
+    top: -71px; }
+  .block-energy_title {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 17px;
+    position: relative; }
+  .block-energy_subtitle {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px; }
+
+.block-vox_title {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px; }
+
+.block-vox_subtitle {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 7px; }
+
+.block-energy2 {
+  display: none;
+  max-width: 200px;
+  width: 100%;
+  position: relative; }
+  .block-energy2::before {
+    content: url(../img/features/lightning.png);
+    position: absolute;
+    left: -39px;
+    top: -71px; }
+  .block-energy2_title {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 17px;
+    position: relative; }
+  .block-energy2_subtitle {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px; }
+
+.block-vox2_title {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px; }
+
+.block-vox2_subtitle {
+  color: #ffffff;
+  font-family: "Helvetica Neue";
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: 7px; }
+
+.block-concerts {
+  max-width: 440px;
+  width: 100%; }
+  .block-concerts_title {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 32px; }
+    .block-concerts_title span {
+      color: #ff6d73;
+      font-family: "IBM Plex Serif Semi Bold";
+      font-size: 150px;
+      font-weight: 600;
+      line-height: 57px; }
+  .block-concerts_descr {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .block-concerts_descr1 {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px; }
+  .block-concerts_descr2 {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 18px; }
+  .block-concerts_descr3 {
+    color: #ff7c7c;
+    font-size: 26px;
+    line-height: 32px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+
+.block-punctuation {
+  max-width: 239px;
+  width: 100%; }
+  .block-punctuation_title {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px; }
+  .block-punctuation_subtitle {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px; }
+
+.features-line3 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
+.block-dotes {
+  max-width: 200px;
+  width: 100%; }
+  .block-dotes img {
+    position: absolute;
+    left: 103px; }
+
+.block-everywhere {
+  max-width: 440px;
+  width: 100%;
+  position: relative; }
+  .block-everywhere_title {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 57px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+  .block-everywhere_subtitle {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-top: 3px; }
+
+.block-power {
+  max-width: 239px;
+  width: 100%; }
+  .block-power_descr1 {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 18px; }
+  .block-power_descr2 {
+    color: #ff6d73;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 18px; }
+
+.block-power2 {
+  max-width: 239px;
+  width: 100%; }
+  .block-power2_descr1 {
+    color: #ffffff;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 18px; }
+  .block-power2_descr2 {
+    color: #ff6d73;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    line-height: 18px; }

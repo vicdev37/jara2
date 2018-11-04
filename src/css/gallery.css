@@ -1,0 +1,65 @@
+.media {
+  margin-top: 36px; }
+  .media-title {
+    width: 205px;
+    height: 65px;
+    margin-left: 37px;
+    color: #000000;
+    font-size: 50px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+
+.wrapper .active {
+  background-color: black;
+  color: white; }
+
+.tabs {
+  margin-left: 40px;
+  margin-top: 20px; }
+
+.tab {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 5px 35px;
+  margin-left: -4px; }
+
+.gallery_photo {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+  z-index: 1; }
+  .gallery_photo img {
+    margin: 5px;
+    border: 3px solid #45161c; }
+
+a.photo img:hover {
+  border: 3px solid #fff; }
+
+a#fancybox-close {
+  right: -30px; }
+
+a#fancybox-right {
+  right: -20px; }
+
+.gallery_video {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.video {
+  margin: 20px 30px;
+  max-width: 530px;
+  width: 100%; }
+
+iframe {
+  height: 300px;
+  width: 100%; }

@@ -1,0 +1,43 @@
+.section-clients h2 {
+  color: #000000;
+  font-size: 50px;
+  font-family: "IBM Plex Serif Semi Bold";
+  font-weight: 600;
+  margin-left: 115px; }
+
+.clients {
+  max-width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .clients-block {
+    width: 248px;
+    min-height: 75px;
+    margin-bottom: 60px; }
+
+.etc {
+  color: #ff6d73;
+  font-family: Helvetica;
+  font-size: 17px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  border: 1px dashed #ff6d73;
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 12px;
+  text-align: right; }
