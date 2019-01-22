@@ -1,12 +1,4 @@
 
-$(document).ready(function () {
- $("a.photo").fancybox({
-  transitionIn: 'elastic',
-  transitionOut: 'elastic',
-  speedIn: 500,
-  speedOut: 500
- });
-});
 
 $(".tab_item").not(":first").hide();
 
@@ -20,57 +12,163 @@ $('.menu-icon').click(function(){
   $('.menu').toggle("active");
  });
 
-var element = document.getElementById('phone');
-var maskOptions = {
-  mask: 'Ваш номер +7(000)000-00-00',
-  lazy: false
-}
-var mask = new IMask(element, maskOptions);
+$('.sl').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  responsive: [
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+      }
+    },
+    {
+      breakpoint: 1350,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+   
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    // {
+    //   breakpoint: 768,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //   }
+    // },
+    // {
+    //   breakpoint: 576,
+    //   settings: {
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //   }
+    // }
+  ]
+});
 
-const button = $('.form-button input');
-const form = $('.form')
-const overlay = $('.overlay');
-const closePopup = $('.close-popup');
-
-// button.click((evt) => {
-// 	evt.preventDefault();
-//  overlay.addClass('open');
-// })
-
-// closePopup.click(() => {
-// 	overlay.removeClass('open');
+// $(document).ready(function () {
+//   $("#phone").mask("+7 (999) 999-99-99");
 // });
+
+// $('#form').validate({
+//   rules: {
+//     name: {
+//       required: true,
+//       name: true
+//     },
+//     tel: {
+//       required: true,
+//     }
+//   },
+//   messages: {
+//     name: {
+//       required: "Поле обязательно для заполнения"
+//     },
+//     phone: {
+//       required: "Поле обязательно для заполнения"
+//     },
+//   }
+// });
+
+$(document).ready(function () {
+  $(".menu").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+});
+
+$(document).ready(function () {
+  $(".header-button").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+});
+
+$(document).ready(function () {
+  $(".header-mobile_button").on("click", "a", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href'),
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({ scrollTop: top }, 1500);
+  });
+});
 
 // Отправка заявки 
 $(document).ready(function () {
-	$('#form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-		if (document.form.name.value == '' || document.form.phone.value == '') {
-			valid = false;
-			return valid;
-		}
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function () {
-			$('.js-overlay-thank-you').fadeIn();
-			$(this).find('input').val('');
-			$('#form').trigger('reset');
-		});
-		return false;
-	});
+  $('#form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+    if (document.form.name.value == '' || document.form.phone.value == '') {
+      valid = false;
+      return valid;
+    }
+    $.ajax({
+      type: "POST",
+      url: "src/mail/mail.php",
+      data: $(this).serialize()
+    }).done(function () {
+      $('.js-overlay-thank-you').fadeIn();
+      $(this).find('input').val('');
+      $('#form').trigger('reset');
+    });
+    return false;
+  });
 });
 
 // Закрыть попап «спасибо»
 $('.js-close-thank-you').click(function () { // по клику на крестик
-	$('.js-overlay-thank-you').fadeOut();
+  $('.js-overlay-thank-you').fadeOut();
 });
 
 $(document).mouseup(function (e) { // по клику вне попапа
-	var popup = $('.popup');
-	if (e.target != popup[0] && popup.has(e.target).length === 0) {
-		$('.js-overlay-thank-you').fadeOut();
-	}
+  var popup = $('.popup');
+  if (e.target != popup[0] && popup.has(e.target).length === 0) {
+    $('.js-overlay-thank-you').fadeOut();
+  }
 });
 
-
+// Маска ввода номера телефона (плагин maskedinput)
+$(function ($) {
+  $('[name="phone"]').mask("+7(999) 999-9999");
+});

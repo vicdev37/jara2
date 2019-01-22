@@ -1,10 +1,13 @@
 <?php 
 
+$name= $_POST['name'];
+$phone = $_POST['phone'];
+
+
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
-$name= $_POST['user_name'];
-$phone = $_POST['user_phone'];
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -26,9 +29,10 @@ $mail->addAddress('justicejesus1237@gmail.com');     // Add a recipient
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Новая заявка сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
-'
-
+$mail->Body    = '
+	Пользователь оставил свои данные <br> 
+	Имя: неизвестно <br>
+	Телефон: ' . $phone . '';
 $mail->AltBody = 'Это альтернативный текст';
 
 if(!$mail->send()) {

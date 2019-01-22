@@ -92,6 +92,7 @@
         background: black;
         position: absolute;
         left: 32px;
+        top: 431px;
         height: 3px;
         max-width: 294px;
         width: 100%;
@@ -106,7 +107,9 @@
     letter-spacing: 0.23px;
     background: transparent;
     color: #ffffff;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+            border-radius: 10px; }
     .header-button button:hover {
       background: #FA8072; }
 
@@ -116,7 +119,11 @@
   list-style: none;
   position: fixed;
   top: 20px;
-  right: 43px; }
+  right: 43px;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  z-index: 3; }
   .menu li {
     float: left; }
     .menu li a {

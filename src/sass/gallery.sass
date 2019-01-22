@@ -1,57 +1,62 @@
 .media
-	margin-top: 36px
-	&-title
-		width: 205px
-		height: 65px
-		margin-left: 37px
-		color: #000000
-		font-size: 50px
-		// Text style for "От"
-		font-family: "IBM Plex Serif Semi Bold"
-		font-weight: 600
+    margin-top: 36px
+
+    &-title
+        width: 205px
+        height: 65px
+        margin-left: 37px
+        color: #000000
+        font-size: 50px
+
+        // Text style for "От"
+        font-family: "IBM Plex Serif Semi Bold"
+        font-weight: 600
 
 .wrapper .active
-		background-color: black
-		color: white
+    background-color: black
+    color: white
+
 .tabs
-	margin-left: 40px
-	margin-top: 20px		
+    margin-left: 40px
+    margin-top: 20px
+
 .tab
-	cursor: pointer	
-	border: 1px solid black	
-	padding: 5px 35px
-	margin-left: -4px
-	
+    cursor: pointer
+    border: 1px solid black
+    padding: 5px 35px
+    margin-left: -4px
+
+.tab_content
+    
+
 .gallery_photo
-	position: relative
-	margin-top: 30px
-	text-align: center
-	z-index: 1
-	img
-		margin: 5px
-		border: 3px solid #45161c
-	
+    margin-top: 30px
+    text-align: center
 
-a.photo img:hover
-	border: 3px solid #fff
-
-a#fancybox-close 	
-	right: -30px	
-a#fancybox-right
-	right: -20px	
+    img
+        margin: auto
+        border: 3px solid #45161c
+        max-width: 450px
+        min-height: 200px
 
 .gallery_video
-	margin-top: 30px
-	display: flex
-	flex-wrap: wrap
-	justify-content: center
+    margin-top: 30px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
 
-.video	
-	margin: 20px 30px
-	max-width: 530px
-	width: 100%
+.video
+    margin: 20px 30px
+    max-width: 530px
+    width: 100%
 
 iframe
-	height: 300px
-	width: 100%
+    height: 300px
+    width: 100%
 
+button.slick-next
+    right: 50px
+
+button.slick-prev
+	left: 50px
+	z-index: 2
