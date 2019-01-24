@@ -31,7 +31,6 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 gulp.task('scripts', function() {
 	return gulp.src([ // Берем все необходимые библиотеки
 		'src/libs/jquery/dist/jquery.min.js', // Берем jQuery
-		'src/libs/magnific-popup/dist/jquery.magnific-popup.min.js' // Берем Magnific Popup
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
@@ -67,7 +66,17 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('dist/img')); // Выгружаем на продакшен
 });
 
-gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
+gulp.task('video', function () {
+	return gulp.src('src/video/**/*') // Берем все изображения из src
+		.pipe(gulp.dest('dist/video')); // Выгружаем на продакшен
+});
+
+gulp.task('mail', function () {
+	return gulp.src('src/mail/**/*') // Берем все изображения из src
+		.pipe(gulp.dest('dist/mail')); // Выгружаем на продакшен
+});
+
+gulp.task('build', ['clean', 'img', 'video', 'mail', 'sass', 'scripts'], function () {
 	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'src/css/*',
 		// 'src/css/main.css',
