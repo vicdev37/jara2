@@ -1,6 +1,6 @@
 <?php
 
-$recepient = "justicejesus1237@gmail.com";
+$recepient = "natpuot1992@gmail.com";
 $siteName = "Jara-showgroup";
 
 $name = trim($_POST["name"]);

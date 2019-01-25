@@ -836,40 +836,28 @@
 		<div class="footer-wrap_right__title">
 			<a id="button"><h2>Заказать <br> группу</h2></a>
 		</div>
-		<!-- /.footer-wrap_right__title -->
 
-			<!-- <div class="form" id="form">
-				<form action="mailer/smart.php" method="POST">
-					<div class="form-name">
-					<input type="text" name="name" placeholder="Ваше имя" required>
-				</div> -->
-				<!-- /.form-name -->
-				<!-- <div class="form-phone">
-				<input required id="phone" type="tel" name="phone" placeholder="Ваш номер телефона">
-				</div> -->
-				<!-- /.form-phone -->
-				<!-- <div class="form-date">
-					<input type="text" name="date" placeholder="дата вашего мероприятия">
-				</div> -->
-				<!-- /.form-date -->
-
-				<!-- <label class="form-comment">
-					
-					<textarea name="comment" cols="43" rows="7" placeholder="Пару слов о Вашем мероприятии"></textarea>
-				</label>
+		<script type="text/javascript">var submitted=false;</script>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+					onload="if(submitted) {
+						$('.js-overlay-thank-you').fadeIn()
+					}">
+				</iframe>
+					<form action="https://docs.google.com/forms/d/e/1FAIpQLScoN-sBvfJH1G0rca1blVGZOWuUMHZ1MKGOFheNaqAP8KfEjw/formResponse" id="form" method="post" target="hidden_iframe" 
+			onsubmit="submitted=true;">
+    
+				<label>Name</label>
+				<input name="entry.866607749" type="text" required/>
+	
+				<label>Email</label>
+				<input name="entry.2073979005" type="email" required />
 				
-			<div class="form-button" onclick="ym(51930935, 'reachGoal', 'formBtn'); return true;">
-				<input type="submit" name="submit">
-			</div> -->
-			<!-- /.form-button -->
-			<!-- <div class="result"></div>
+				<label>Phone</label>
+				<input name="entry.664118086" type="text" required />
 
-				</form> -->
-<form class="form" id="form" name="form" action="https://formspree.io/justicejesus1237@gmail.com" method="POST">
-				<input type="text" class="form-field" name="name" placeholder="Введите ваше имя">
-				<input type="text" class="form-field" name="phone" placeholder="Введите ваш телефон">
-				<button class="form-button"><span class="text-button">Отправить заявку</span></button>
-			</form>
+				<input type="submit" value="Send" />
+	
+		</form>
 
 			<div class="overlay js-overlay-thank-you">
 				<div class="popup js-thank-you">
@@ -883,57 +871,19 @@
 
 		
 	</div>
-	<!-- /.footer-wrap_right -->
 </div>
-<!-- /.footer-wrap -->
-
-</div>
-<!-- /.container -->
-</div>
-<!-- /.section-footer -->
 
 
+</div>
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="slick/slick/slick.min.js"></script> -->
 <script src="js/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.18.0/jquery.validate.min.js"></script>
 <script src='js/script.js'></script>
 <script src="js/jquery.vide.min.js"></script>
 <script src="js/jquery.maskedinput.min.js"></script>
-
-
-
-<!-- <script>
-		$(document).ready(function	()	{
-			$("#phone").mask("+7 (999) 999-99-99");
-		});
-</script> -->
-
-<!-- <script>
-	$('#form').validate({
-		rules: {
-			name: {
-				required: true,
-				name: true
-			},
-			tel: {
-				required: true,
-			}
-		},
-		messages: {
-			name: {
-				required: "Поле обязательно для заполнения"
-			},
-			phone: {
-				required: "Поле обязательно для заполнения"
-			},
-		}
-	});
-</script> -->
-
-
 
 </body>
 </html>

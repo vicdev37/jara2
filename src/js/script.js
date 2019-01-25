@@ -138,23 +138,12 @@ $(document).ready(function () {
 
   // Отправка заявки 
 
-  // $('#form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+  $('#form').submit(function (evt) { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
     
-  //   if (document.form.name.value == '' || document.form.phone.value == '') {
-  //     valid = false;
-  //     return valid;
-  //   }
-  //   $.ajax({
-  //     type: "POST",
-  //     url: "./mail/mail.php",
-  //     data: $(this).serialize()
-  //   }).done(function () {
-  //     $('.js-overlay-thank-you').fadeIn();
-  //     $(this).find('input').val('');
-  //     $('#form').trigger('reset');
-  //   });
-  //   return false;
-  // });
+    console.log('Скрипт тоже работает!')
+    // evt.preventDefault()
+  
+  });
 
   // Закрыть попап «спасибо»
   $('.js-close-thank-you').click(function () { // по клику на крестик
