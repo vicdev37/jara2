@@ -847,7 +847,8 @@ a.asoc {
     letter-spacing: 0.44px; }
   .contacts .contacts-right {
     max-width: 405px;
-    position: relative; }
+    position: relative;
+    margin-right: 5px; }
     .contacts .contacts-right::before {
       content: '';
       display: block;
@@ -866,61 +867,42 @@ a.asoc {
   margin-top: 60px;
   padding: 40px;
   text-align: center; }
-  .form-name input {
+  .form-name {
     max-width: 371px;
     width: 100%;
     background-color: #3c3b49;
     border: 1px solid #3c3b49;
     -webkit-border-radius: 2px;
             border-radius: 2px;
-    padding: 10px 17px;
-    color: #ffffff; }
-  .form-phone input {
-    max-width: 371px;
-    width: 100%;
-    background-color: #3c3b49;
-    border: 1px solid #3c3b49;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    margin-top: 10px;
-    padding: 10px 17px;
-    color: #6d6c77; }
-  .form-date input {
-    max-width: 371px;
-    width: 100%;
-    background-color: #3c3b49;
-    border: 1px solid #3c3b49;
-    -webkit-border-radius: 2px;
-            border-radius: 2px;
-    margin-top: 10px;
-    padding: 10px 17px;
-    color: #ffffff; }
-  .form-date input {
-    background-color: #3c3b49;
-    margin-top: 10px; }
-  .form-date span {
-    opacity: 0.5;
+    padding: 16px 17px;
     color: #ffffff;
-    font-family: "Helvetica Neue";
-    font-size: 12px; }
-  .form textarea {
-    color: #ffffff; }
+    font-size: 20px; }
+  .form-phone {
+    max-width: 371px;
+    width: 100%;
+    background-color: #3c3b49;
+    border: 1px solid #3c3b49;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    margin-top: 30px;
+    padding: 16px 17px;
+    color: #6d6c77;
+    font-size: 20px; }
   .form-button {
-    margin-top: 30px; }
-    .form-button input {
-      max-width: 371px;
-      width: 100%;
-      -webkit-border-radius: 2px;
-              border-radius: 2px;
-      background-color: #ffffff;
-      color: #232323;
-      font-family: "Helvetica Neue";
-      font-size: 14px;
-      font-weight: 700;
-      padding: 15px 145px;
-      cursor: pointer; }
-      .form-button input:hover {
-        background: #FA8072; }
+    margin-top: 30px;
+    max-width: 371px;
+    width: 100%;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #ffffff;
+    color: #232323;
+    font-family: "Helvetica Neue";
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 145px;
+    cursor: pointer; }
+    .form-button:hover {
+      background: #FA8072; }
   .form textarea {
     max-width: 371px;
     width: 100%;
@@ -950,14 +932,16 @@ a.asoc {
 .popup {
   position: absolute;
   width: 300px;
-  height: 180px;
+  height: 230px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding: 40px;
-  background: #FA8072; }
+  background: #FA8072;
+  text-align: center;
+  line-height: 30px; }
 
 .close-popup {
   position: absolute;

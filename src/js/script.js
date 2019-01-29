@@ -159,6 +159,6 @@ $(document).ready(function () {
 
   // Маска ввода номера телефона (плагин maskedinput)
   $(function ($) {
-    $('[name="phone"]').mask("+7(999) 999-9999");
+    $('[id="phone"]').mask("+7(999) 999-9999");
   });
 })

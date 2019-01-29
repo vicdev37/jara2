@@ -69,6 +69,7 @@
 	.contacts-right
 		max-width: 405px
 		position: relative
+		margin-right: 5px
 		&::before
 			content: ''
 			display: block
@@ -83,70 +84,50 @@
 			line-height: 20px
 			// Text style for "Звоните, п"
 			letter-spacing: 0.1px
+			
 .form
 	margin-top: 60px
 	padding: 40px
 	text-align: center
 	
 
-	&-name
-		input
-			max-width: 371px
-			width: 100%
-			background-color: #3c3b49
-			border: 1px solid #3c3b49
-			border-radius: 2px
-			padding: 10px 17px
-			color: #ffffff
+	&-name 
+		max-width: 371px
+		width: 100%
+		background-color: #3c3b49
+		border: 1px solid #3c3b49
+		border-radius: 2px
+		padding: 16px 17px
+		color: #ffffff
+		font-size: 20px
 
 	&-phone	
-		input
-			max-width: 371px
-			width: 100%
-			background-color: #3c3b49
-			border: 1px solid #3c3b49
-			border-radius: 2px
-			margin-top: 10px
-			padding: 10px 17px
-			color: #6d6c77
-	&-date
-		input
-			max-width: 371px
-			width: 100%
-			background-color: #3c3b49
-			border: 1px solid #3c3b49
-			border-radius: 2px
-			margin-top: 10px
-			padding: 10px 17px
-			color: #ffffff
-
-		input
-			background-color: #3c3b49
-			margin-top: 10px
-		span
-			opacity: 0.5
-			color: #ffffff
-			font-family: "Helvetica Neue"
-			font-size: 12px
-	textarea
-		color: #ffffff	
-	&-button
+		max-width: 371px
+		width: 100%
+		background-color: #3c3b49
+		border: 1px solid #3c3b49
+		border-radius: 2px
 		margin-top: 30px
+		padding: 16px 17px
+		color: #6d6c77
+		font-size: 20px
+
 
 		
-		input
-			max-width: 371px
-			width: 100%
-			border-radius: 2px
-			background-color: #ffffff
-			color: #232323
-			font-family: "Helvetica Neue"
-			font-size: 14px
-			font-weight: 700
-			padding: 15px 145px
-			cursor: pointer
-			&:hover
-			    background: #FA8072
+	&-button
+		margin-top: 30px
+		max-width: 371px
+		width: 100%
+		border-radius: 2px
+		background-color: #ffffff
+		color: #232323
+		font-family: "Helvetica Neue"
+		font-size: 14px
+		font-weight: 700
+		padding: 15px 145px
+		cursor: pointer
+		&:hover
+		  background: #FA8072
 
 	textarea
 			max-width: 371px
@@ -175,12 +156,14 @@
 .popup
 	position: absolute
 	width: 300px
-	height: 180px
+	height: 230px
 	left: 50%
 	top: 50%
 	transform: translate(-50%, -50%)
 	padding: 40px	
 	background:	#FA8072
+	text-align: center
+	line-height: 30px
 
 .close-popup
 	position: absolute

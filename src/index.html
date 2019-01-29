@@ -843,25 +843,25 @@
 						$('.js-overlay-thank-you').fadeIn()
 					}">
 				</iframe>
-					<form action="https://docs.google.com/forms/d/e/1FAIpQLScoN-sBvfJH1G0rca1blVGZOWuUMHZ1MKGOFheNaqAP8KfEjw/formResponse" id="form" method="post" target="hidden_iframe" 
+					<form action="https://docs.google.com/forms/d/e/1FAIpQLSd_RUxvBno5MjfyqbkCOE8dUdpqpBa8Yn_sHLgyWyINay8a7g/formResponse" id="form" class="form" method="post" target="hidden_iframe" 
 			onsubmit="submitted=true;">
     
-				<label>Name</label>
-				<input name="entry.866607749" type="text" required/>
-	
-				<label>Email</label>
-				<input name="entry.2073979005" type="email" required />
 				
-				<label>Phone</label>
-				<input name="entry.664118086" type="text" required />
+				<input name="entry.414013984" class="form-name" placeholder="Введите Имя" type="text" required/>
+	
+				<!-- <label>Email</label> -->
+				<!-- <input name="entry.2073979005" type="email" required /> -->
+				
+				
+<input name="entry.527647091" class="form-phone" placeholder="Введите Телефон" id="phone" type="phone" required />
 
-				<input type="submit" value="Send" />
+				<input type="submit" class="form-button" value="Отправить" />
 	
 		</form>
 
 			<div class="overlay js-overlay-thank-you">
 				<div class="popup js-thank-you">
-					<h2>Спасибо за заявку</h2>
+					<h2>Спасибо за заявку. Мы свяжемся с Вами в скором времени!</h2>
 					<div class="close-popup js-close-thank-you"></div>
 				</div>
 			</div>
