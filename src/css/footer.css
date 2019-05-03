@@ -120,8 +120,9 @@
     font-family: "Helvetica Neue";
     font-size: 14px;
     font-weight: 700;
-    padding: 15px 145px;
-    cursor: pointer; }
+    padding: 15px 0px;
+    cursor: pointer;
+    text-align: center; }
     .form-button:hover {
       background: #FA8072; }
   .form textarea {

@@ -21,7 +21,7 @@
     .header-mobile_fromto__rock {
       margin-left: 250px; }
       .header-mobile_fromto__rock::before {
-        content: '';
+        content: "";
         display: block;
         background: black;
         position: absolute;
@@ -30,16 +30,26 @@
         max-width: 294px;
         width: 100%;
         background-color: #ffffff; }
-  .header-mobile_button button {
-    margin-top: 50px;
-    margin-bottom: 160px;
-    font-family: "Helvetica Neue";
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 48px;
-    letter-spacing: 0.23px;
-    background: transparent;
-    color: #ffffff; }
+  .header-mobile_button {
+    padding: 20px; }
+    .header-mobile_button a {
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 160px;
+      max-width: 250px;
+      margin: auto;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 48px;
+      letter-spacing: 0.23px;
+      background: transparent;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      border: solid 1px white; }
+      .header-mobile_button a:hover {
+        background: #FA8072; }
 
 .header-logo2 {
   display: none; }
@@ -87,7 +97,7 @@
     .header-fromto_rock {
       margin-left: 250px; }
       .header-fromto_rock::before {
-        content: '';
+        content: "";
         display: block;
         background: black;
         position: absolute;
@@ -97,20 +107,25 @@
         max-width: 294px;
         width: 100%;
         background-color: #ffffff; }
-  .header-button button {
+  .header-button a {
     margin-top: 50px;
     margin-bottom: 160px;
     font-family: "Helvetica Neue";
     font-size: 14px;
     font-weight: 500;
     padding: 12px 48px;
+    max-width: 250px;
     letter-spacing: 0.23px;
     background: transparent;
     color: #ffffff;
     cursor: pointer;
+    border: solid 1px white;
     -webkit-border-radius: 10px;
-            border-radius: 10px; }
-    .header-button button:hover {
+            border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center; }
+    .header-button a:hover {
       background: #FA8072; }
 
 .menu {
@@ -141,7 +156,7 @@
   position: relative;
   display: inline-block; }
   .phone::before {
-    content: '';
+    content: "";
     display: block;
     background: white;
     position: absolute;

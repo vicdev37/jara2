@@ -33,7 +33,7 @@ body {
     .header-mobile_fromto__rock {
       margin-left: 250px; }
       .header-mobile_fromto__rock::before {
-        content: '';
+        content: "";
         display: block;
         background: black;
         position: absolute;
@@ -42,16 +42,26 @@ body {
         max-width: 294px;
         width: 100%;
         background-color: #ffffff; }
-  .header-mobile_button button {
-    margin-top: 50px;
-    margin-bottom: 160px;
-    font-family: "Helvetica Neue";
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 48px;
-    letter-spacing: 0.23px;
-    background: transparent;
-    color: #ffffff; }
+  .header-mobile_button {
+    padding: 20px; }
+    .header-mobile_button a {
+      display: block;
+      margin-top: 50px;
+      margin-bottom: 160px;
+      max-width: 250px;
+      margin: auto;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 48px;
+      letter-spacing: 0.23px;
+      background: transparent;
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      border: solid 1px white; }
+      .header-mobile_button a:hover {
+        background: #FA8072; }
 
 .header-logo2 {
   display: none; }
@@ -99,7 +109,7 @@ body {
     .header-fromto_rock {
       margin-left: 250px; }
       .header-fromto_rock::before {
-        content: '';
+        content: "";
         display: block;
         background: black;
         position: absolute;
@@ -109,20 +119,25 @@ body {
         max-width: 294px;
         width: 100%;
         background-color: #ffffff; }
-  .header-button button {
+  .header-button a {
     margin-top: 50px;
     margin-bottom: 160px;
     font-family: "Helvetica Neue";
     font-size: 14px;
     font-weight: 500;
     padding: 12px 48px;
+    max-width: 250px;
     letter-spacing: 0.23px;
     background: transparent;
     color: #ffffff;
     cursor: pointer;
+    border: solid 1px white;
     -webkit-border-radius: 10px;
-            border-radius: 10px; }
-    .header-button button:hover {
+            border-radius: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center; }
+    .header-button a:hover {
       background: #FA8072; }
 
 .menu {
@@ -153,7 +168,7 @@ body {
   position: relative;
   display: inline-block; }
   .phone::before {
-    content: '';
+    content: "";
     display: block;
     background: white;
     position: absolute;
@@ -899,8 +914,9 @@ a.asoc {
     font-family: "Helvetica Neue";
     font-size: 14px;
     font-weight: 700;
-    padding: 15px 145px;
-    cursor: pointer; }
+    padding: 15px 0px;
+    cursor: pointer;
+    text-align: center; }
     .form-button:hover {
       background: #FA8072; }
   .form textarea {
@@ -1236,8 +1252,6 @@ a.asoc {
     width: 100%; }
   .gallery_photo img {
     width: 91%; }
-  .form-button input {
-    padding: 15px 71px; }
   .contacts-call_phone {
     font-size: 23px; }
   .contacts .contacts-right_descr {
