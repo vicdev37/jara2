@@ -1,34 +1,39 @@
 .voice
     .container
       min-height: 521px
-
+.voice-wrapper
+    display: flex  
+    justify-content: space-between
+    // flex-flow: row wrap
 .voice
     max-width: 1440px
     width: 100%
-    background: url(/img/voice_cover2.jpg) right no-repeat
-    background-size: 800px
+    // background: url(/img/voice_cover2.jpg) right no-repeat
+    // background-size: 800px
+    // background-size: 65%
+    // background-size: cover
+  
 
     &-title
-        max-width: 500px
-        width: 100%
+        // width: 100%
         padding-top: 50px
-        margin-left: 37px
+        padding-left: 37px
         font-size: 50px
         font-family: "IBM Plex Serif Semi Bold"
         font-weight: 600
 
     &-description
-        max-width: 500px
-        width: 100%
+        // max-width: 500px
+        // width: 100%
         margin-top: 20px
-        margin-left: 37px
+        padding-left: 37px
         font-family: Helvetica
         font-size: 18px
         line-height: 27px
 
     &-button
         position: relative
-        margin-left: 37px
+        padding-left: 37px
 
         a
             margin-top: 50px
@@ -48,6 +53,19 @@
             display: block
             text-decoration: none
             text-align: center
-
             &:hover
                 background: #FA8072
+
+.voice-left
+    max-width: 500px
+.voice-right
+    max-width: 900px 
+    margin-top: 25px 
+.voice-img
+    width: 100%
+    img
+        // max-width: 800px
+        width: 100%
+        
+        // min-height: 450px      
+

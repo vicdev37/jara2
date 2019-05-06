@@ -158,7 +158,7 @@
   max-width: 195px;
   width: 100%;
   position: absolute;
-  left: 285px;
+  left: 246px;
   top: 292px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,7 +166,17 @@
   display: flex;
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
-          justify-content: space-around; }
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-contact_socials__icon {
+  min-height: 10px; }
+  .header-contact_socials__icon img {
+    max-width: 24px;
+    width: 100%; }
 
 .phone {
   position: relative;
