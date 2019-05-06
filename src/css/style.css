@@ -119,26 +119,28 @@ body {
         max-width: 294px;
         width: 100%;
         background-color: #ffffff; }
-  .header-button a {
-    margin-top: 50px;
-    margin-bottom: 160px;
-    font-family: "Helvetica Neue";
-    font-size: 14px;
-    font-weight: 500;
-    padding: 12px 48px;
-    max-width: 250px;
-    letter-spacing: 0.23px;
-    background: transparent;
-    color: #ffffff;
-    cursor: pointer;
-    border: solid 1px white;
-    -webkit-border-radius: 10px;
-            border-radius: 10px;
-    display: block;
-    text-decoration: none;
-    text-align: center; }
-    .header-button a:hover {
-      background: #FA8072; }
+  .header-button {
+    position: relative; }
+    .header-button a {
+      margin-top: 50px;
+      margin-bottom: 160px;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 48px;
+      max-width: 250px;
+      letter-spacing: 0.23px;
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      border: solid 1px white;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      display: block;
+      text-decoration: none;
+      text-align: center; }
+      .header-button a:hover {
+        background: #FA8072; }
 
 .menu {
   padding: 0;
@@ -164,6 +166,20 @@ body {
   .menu-icon {
     display: none; }
 
+.header-contacts_socials {
+  max-width: 195px;
+  width: 100%;
+  position: absolute;
+  left: 285px;
+  top: 292px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around; }
+
 .phone {
   position: relative;
   display: inline-block; }
@@ -177,6 +193,54 @@ body {
     width: 1px;
     background-color: #ffffff;
     right: 136px; }
+
+.voice .container {
+  min-height: 521px; }
+
+.voice {
+  max-width: 1440px;
+  width: 100%;
+  background: url(/img/voice_cover2.jpg) right no-repeat;
+  -webkit-background-size: 800px 800px;
+          background-size: 800px; }
+  .voice-title {
+    max-width: 500px;
+    width: 100%;
+    padding-top: 50px;
+    margin-left: 37px;
+    font-size: 50px;
+    font-family: "IBM Plex Serif Semi Bold";
+    font-weight: 600; }
+  .voice-description {
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 37px;
+    font-family: Helvetica;
+    font-size: 18px;
+    line-height: 27px; }
+  .voice-button {
+    position: relative;
+    margin-left: 37px; }
+    .voice-button a {
+      margin-top: 50px;
+      font-family: "Helvetica Neue";
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 48px;
+      max-width: 250px;
+      letter-spacing: 0.23px;
+      background: black;
+      color: #ffffff;
+      cursor: pointer;
+      border: solid 1px white;
+      -webkit-border-radius: 10px;
+              border-radius: 10px;
+      display: block;
+      text-decoration: none;
+      text-align: center; }
+      .voice-button a:hover {
+        background: #FA8072; }
 
 @font-face {
   font-family: 'Helvetica';
@@ -1111,6 +1175,9 @@ a.asoc {
     width: 310px; }
   .header-button {
     margin-top: -46px; }
+  .header-contacts_socials {
+    left: 203px;
+    top: 242px; }
   .band {
     max-width: 278px;
       max-width-width: 100%; }
@@ -1210,6 +1277,8 @@ a.asoc {
     .header-mobile_button button {
       width: 300px;
       margin-bottom: 60px; }
+  .header-contacts_socials {
+    display: none; }
   .header-button {
     display: none; }
     .header-button button {

@@ -117,6 +117,9 @@
     width: 310px; }
   .header-button {
     margin-top: -46px; }
+  .header-contacts_socials {
+    left: 203px;
+    top: 242px; }
   .band {
     max-width: 278px;
       max-width-width: 100%; }
@@ -216,6 +219,8 @@
     .header-mobile_button button {
       width: 300px;
       margin-bottom: 60px; }
+  .header-contacts_socials {
+    display: none; }
   .header-button {
     display: none; }
     .header-button button {
