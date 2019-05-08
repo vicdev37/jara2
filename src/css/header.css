@@ -54,12 +54,15 @@
 .header-logo2 {
   display: none; }
 
-.header-video {
+video {
   position: absolute;
+  top: -2px;
+  left: 0px;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0; }
+  z-index: -100;
+  background: url(/img/video_bg-min.jpg) no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover; }
 
 .section-header {
   position: relative; }
@@ -67,12 +70,15 @@
     position: relative;
     overflow: hidden; }
 
-.header {
+.header_main-content {
+  max-width: 600px;
+  width: 100%;
   margin-left: 107px;
+  padding-top: 123px; }
+
+.header {
   color: #ffffff;
   position: relative; }
-  .header-logo {
-    padding-top: 123px; }
   .header-title {
     margin-top: 20px;
     font-family: "Helvetica Neue";
@@ -101,7 +107,7 @@
         display: block;
         background: black;
         position: absolute;
-        left: 32px;
+        left: 136px;
         top: 431px;
         height: 3px;
         max-width: 294px;
@@ -158,7 +164,7 @@
   max-width: 195px;
   width: 100%;
   position: absolute;
-  left: 246px;
+  left: 347px;
   top: 292px;
   display: -webkit-box;
   display: -webkit-flex;

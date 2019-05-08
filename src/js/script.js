@@ -1,5 +1,6 @@
 
 $(document).ready(function () {
+  
   $(".tab_item").not(":first").hide();
 
   $(".wrapper .tab").click(function () {
@@ -12,7 +13,6 @@ $(document).ready(function () {
     $('.menu').toggle("active");
   });
 
-  console.log('aaaaaaaaa')
   
   $('.sl').slick({
     infinite: true,

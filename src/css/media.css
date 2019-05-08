@@ -1,8 +1,12 @@
 @media (max-width: 1400px) {
   .footer-wrap_right {
-    max-width: 531px; } }
+    max-width: 531px; }
+  .voice {
+    margin-top: 264px; } }
 
 @media (max-width: 1284px) {
+  .voice {
+    margin-top: 224px; }
   .features-line2 {
     padding-left: 40px;
     padding-right: 8px; }
@@ -12,6 +16,8 @@
     font-size: 21px; } }
 
 @media (max-width: 1024px) {
+  .voice {
+    margin-top: 54px; }
   .contacts .contacts-right::before {
     display: none; }
   .block-energy::before {
@@ -31,7 +37,45 @@
     padding-left: 20px;
     padding-right: 20px; } }
 
+@media (max-width: 1018px) {
+  video {
+    top: -6px; }
+  .header-button a {
+    margin-top: 28px; } }
+
 @media (max-width: 991px) {
+  .header {
+    min-height: 550px;
+    background: url(/img/jara9912.jpg) center no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
+    .header video {
+      display: none; }
+  .header_main-content {
+    margin-left: 23px;
+    padding-top: 100px; }
+  .header-logo img {
+    max-width: 180px; }
+  .header-description {
+    max-width: 260px; }
+  .header-contacts_socials {
+    left: 10px;
+    top: 27px; }
+  .header-fromto {
+    margin-top: 31px;
+    font-size: 17px; }
+    .header-fromto_rock {
+      margin-left: 76px; }
+  .header-fromto_rock::before {
+    left: 49px;
+    top: 345px;
+    height: 2px;
+    max-width: 107px; }
+  .header-button {
+    max-width: 213px;
+    width: 100%; }
+  .voice {
+    margin-top: -132px; }
   .voice-wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -96,8 +140,15 @@
     margin-left: 0; } }
 
 @media (max-width: 767px) {
-  .header {
-    margin-left: 35px; }
+  .menu {
+    right: 7px; }
+  .header_main-content {
+    margin-left: 0;
+    padding-left: 20px; }
+  .header-contacts_socials {
+    max-width: 123px; }
+  .header-contact_socials__icon {
+    max-width: 23px; }
   .block-programms {
     max-width: 350px; }
   .block-everywhere_title {
@@ -116,21 +167,21 @@
   .phone::before {
     top: 1px;
     right: 107px; }
-  .header {
-    height: 466px;
-    margin-left: 24px; }
-  .header-fromto_rock::before {
-    max-width: 220px;
-    top: 379px; }
-  .header-fromto_rock {
-    margin-left: 180px; }
+  .header_main-content {
+    padding-top: 161px; }
   .header-logo img {
-    width: 310px; }
-  .header-button {
-    margin-top: -46px; }
+    width: 128px;
+    position: absolute;
+    left: 210px;
+    top: 67px; }
+  .header-fromto_rock::before {
+    left: 46px; }
   .header-contacts_socials {
-    left: 203px;
-    top: 242px; }
+    max-width: 121px;
+    left: 16px;
+    top: 57px; }
+  .header-contact_socials__icon {
+    max-width: 25px; }
   .band {
     max-width: 278px;
       max-width-width: 100%; }
@@ -202,13 +253,18 @@
     margin-top: 20px; }
   .phone:before {
     display: none; }
+  .header_main-content {
+    position: relative;
+    padding-top: 26px;
+    padding-left: 0; }
   .header-video {
     display: none; }
   .header-mobile {
+    position: absolute;
+    top: 59px;
     display: block;
     color: white;
-    margin-left: 0;
-    background: #262534; }
+    margin-left: 0; }
   .header-mobile_description {
     padding-left: 30px;
     padding-right: 30px;
@@ -217,14 +273,15 @@
   .header-mobile_fromto {
     margin-top: 40px;
     margin-left: 30px;
-    font-size: 21px; }
+    font-size: 15px; }
   .header-mobile_fromto__rock {
     margin-left: 56px; }
   .header-mobile_fromto__rock::before {
-    max-width: 95px;
+    max-width: 79px;
+    height: 2px;
     bottom: 289px;
-    left: 63px;
-    top: 150px; }
+    left: 55px;
+    top: 147px; }
   .header-mobile_button {
     text-align: center; }
     .header-mobile_button button {
@@ -240,15 +297,19 @@
     max-width: 100%;
     width: 100%;
     margin-left: 0;
-    background: url("../img/header/header-mobile.png") center/cover no-repeat; }
+    background: url("/img/jara-mobile.jpg") center no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover; }
   .header-logo {
-    display: none; }
-  .header-logo2 {
-    display: block;
-    margin-left: 23px; }
+    display: block; }
+    .header-logo img {
+      left: 147px;
+      top: 6px; }
   .header-title {
-    margin-left: 23px;
-    color: black; }
+    margin-left: 29px;
+    margin-top: -14px;
+    font-size: 17px;
+    color: #ffffff; }
   .header-description {
     display: none; }
   .header-fromto {
@@ -263,6 +324,8 @@
     display: none; }
     .header-button button {
       width: 296px; }
+  .voice {
+    margin-top: -22px; }
   .features-line1 {
     padding-top: 38px; }
   .features-line3 {
