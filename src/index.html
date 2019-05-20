@@ -63,34 +63,18 @@
 			<source src="./video/zhara.mp4" type="video/mp4">
 		</video>
 		<nav class="nav">
-			<div class="menu-icon">
-				<svg xmlns="http://www.w3.org/2000/svg" height="48" id="menu" viewBox="0 0 48 48" width="48">
-					<defs>
-						<style>
-							.vi-primary {
-								fill: #FF6E6E;
-							}
-		
-							.vi-primary,
-							.vi-accent {
-								stroke: #fff;
-								stroke-linecap: round;
-								stroke-width: 0;
-								fill-rule: evenodd;
-							}
-		
-							.vi-accent {
-								fill: #0C0058;
-							}
-						</style>
-					</defs>
-					<path class="vi-primary" d="M9,12H39v4H9V12ZM9,22H39v4H9V22ZM9,32H39v4H9V32Z" />
-					<path class="vi-accent"
-						d="M9,12h4v4H9V12ZM9,22h4v4H9V22ZM9,32h4v4H9V32ZM35,12h4v4H35V12Zm0,10h4v4H35V22Zm0,10h4v4H35V32Z" />
-				</svg>
-			</div>
-			<!-- /.menu-icon -->
+			<a class="menu-btn">
+				<span class="span"></span>
+			</a>
 			<ul class="menu">
+				<li><a href="#band">Команда</a></li>
+				<li><a href="#about">О нас</a></li>
+				<li><a href="#gallery">Галерея</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+				<li><a href="#phone" class="phone">+7(950)851-06-06</a></li>
+			</ul>
+			
+			<ul class="menu-mobile">
 				<li><a href="#band">Команда</a></li>
 				<li><a href="#about">О нас</a></li>
 				<li><a href="#gallery">Галерея</a></li>
@@ -940,7 +924,7 @@
 				<!-- <input name="entry.2073979005" type="email" required /> -->
 				
 				
-<input name="entry.527647091" class="form-phone" placeholder="Введите Телефон" id="phone" type="phone" required />
+<input name="entry.527647091" class="form-phone" placeholder="Введите Телефон" id="phone" type="phone" maxlength="17" required/>
 
 				<input type="submit" class="form-button" value="Отправить" />
 	

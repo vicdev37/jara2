@@ -92,6 +92,7 @@ video
     left: 0px
     width: 100%
     z-index: -100
+
     // min-height: 100vh
     background: url(/img/video_bg-min.jpg) no-repeat
     background-size: cover
@@ -188,12 +189,93 @@ video
             &:hover
                 background: #FA8072
 
+.nav
+    display: flex
+    justify-content: flex-end
+
+.menu-btn
+    display: none
+    width: 45px
+    height: 45px
+    background-color: #ffffff
+    border-radius: 50%
+    position: relative
+
+    .span,
+    ::before,
+    ::after
+        position: absolute
+        top: 50%
+        margin-top: -1px
+        left: 50%
+        margin-left: -10px
+        width: 20px
+        height: 2px
+        background-color: #222222
+
+    ::before,
+    ::after
+        content: ""
+        display: block
+        transition: 0.5s
+
+    ::before
+        transform: translateY(-5px)
+
+    ::after
+        transform: translateY(5px)
+
+.menu-btn_active
+    .span
+        height: 0
+
+.menu-btn_active
+    .span:before
+        transform: rotate(45deg)
+
+.menu-btn_active
+    .span:after
+        transform: rotate(-45deg)
+
+.menu-mobile
+    opacity: 0
+    transition: 0.5s
+    transform: scaleX(0) translateX(10%)
+    transform-origin: right center
+    padding: 0
+    margin: 0
+    list-style: none
+    position: fixed
+    opacity: 0.9
+    top: 55px
+    right: 43px
+    background: rgba(0, 0, 0, 0.3)
+    border-radius: 10px
+    z-index: 3
+
+    li
+        float: left
+
+        a
+            padding: 10px
+            display: block
+            color: #fff
+            text-decoration: none
+            margin: 1px
+
+            &:hover
+                color: #FA8072
+
+.menu-mobile_active
+    opacity: 0.9
+    transform: scaleX(1) translateX(0%)
+
 .menu
     padding: 0
     margin: 0
     list-style: none
     position: fixed
-    top: 20px
+    top: 50px
     right: 43px
     background: rgba(0, 0, 0, 0.3)
     border-radius: 10px
@@ -231,50 +313,6 @@ video
     img
         max-width: 24px
         width: 100%
-
-// nav
-
-//     position: fixed
-//     top: 20px
-//     right: 43px
-//     ul
-//         display: flex
-//     li
-//         list-style-type: none
-
-//     a
-//         display: block
-//         text-decoration: none
-//         color: #ffffff
-//         font-family: "Helvetica Neue"
-//         font-size: 14px
-//         font-weight: 500
-//         line-height: 16px
-//         // Text style for "Команда"
-//         letter-spacing: 0.3px
-//         margin-right: 30px
-//         &:hover
-//             color: #FA8072
-//     .hamburger
-//         display: none
-//         width: 16px
-//         height: 12px
-//         margin: 6px
-//         float: right
-//         position: relative
-//         top: -36px
-//         left: 19px
-//         border-top: 2px solid #fff
-//         border-bottom: 2px solid #fff
-//         &:after
-//             content: ""
-//             position: absolute
-//             display: block
-//             right: 0
-//             left: 0
-//             top: 3px
-//             height: 2px
-//             background: #fff
 
 .phone
     position: relative

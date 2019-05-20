@@ -53,6 +53,8 @@
 		background-size: cover
 		video
 			display: none
+	.menu
+		top: 19px		
 	.header_main-content
 		margin-left: 23px
 		padding-top: 100px		
@@ -232,7 +234,6 @@
 			font-size: 50px		
 	.features
 		padding-bottom: 79px
-	.block-dotes
 
 	.clients-block
 		margin-left: 0	
@@ -250,22 +251,35 @@
 
 
 @media (max-width: 424px)
-	.menu
-		display: none
-		background: black
-		height: 281px
-		z-index: 3
-	
-	.menu-icon
+	.nav
+		
+	.menu-btn
 		display: block
 		position: fixed
-		right: 0
+		right: 2px
+		top: 2px
 		z-index: 3
+	.menu
+		display: none
+		
+
+	.menu-mobile
+		background: black
+		height: 250px
+		z-index: 3
+		
 
 	
-	.menu li
+	// .menu-icon
+	// 	display: block
+	// 	position: fixed
+	// 	right: 0
+	// 	z-index: 3
+
+	
+	.menu-mobile li
 		float: none
-		margin-top: 20px
+		margin-top: 10px
 			
 
 	.phone
